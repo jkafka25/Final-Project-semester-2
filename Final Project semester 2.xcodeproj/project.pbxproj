@@ -13,6 +13,7 @@
 		6AE8AC19246DE1BF005B7218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8AC17246DE1BF005B7218 /* Main.storyboard */; };
 		6AE8AC1B246DE1C5005B7218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8AC1A246DE1C5005B7218 /* Assets.xcassets */; };
 		6AE8AC1E246DE1C5005B7218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8AC1C246DE1C5005B7218 /* LaunchScreen.storyboard */; };
+		6AE8AC26246DFB57005B7218 /* todolistcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8AC25246DFB57005B7218 /* todolistcell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6AE8AC1A246DE1C5005B7218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AE8AC1D246DE1C5005B7218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AE8AC1F246DE1C5005B7218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE8AC25246DFB57005B7218 /* todolistcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistcell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6AE8AC11246DE1BF005B7218 /* AppDelegate.swift */,
 				6AE8AC13246DE1BF005B7218 /* SceneDelegate.swift */,
 				6AE8AC15246DE1BF005B7218 /* ViewController.swift */,
+				6AE8AC25246DFB57005B7218 /* todolistcell.swift */,
 				6AE8AC17246DE1BF005B7218 /* Main.storyboard */,
 				6AE8AC1A246DE1C5005B7218 /* Assets.xcassets */,
 				6AE8AC1C246DE1C5005B7218 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				6AE8AC16246DE1BF005B7218 /* ViewController.swift in Sources */,
 				6AE8AC12246DE1BF005B7218 /* AppDelegate.swift in Sources */,
 				6AE8AC14246DE1BF005B7218 /* SceneDelegate.swift in Sources */,
+				6AE8AC26246DFB57005B7218 /* todolistcell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
