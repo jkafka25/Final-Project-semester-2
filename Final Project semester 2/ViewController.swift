@@ -22,6 +22,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         listTableView.dataSource = self
         listTableView.rowHeight = 80
     }
+    
+    @IBAction func addButton(_ sender: Any) {
+   
+        let todoAlert = UIAlertController(title: "Add Todo", message: "add a new todo", preferredStyle: .alert)
+        todoAlert.addTextField()
+        
+        let addTodoAction = UIAlertAction(title: "+", style: .default) { (action) in
+            let newTodo = todoAlert.textFields![0]
+            self.todos.append(newTodo.text!)
+            self.listTableView.reloadData()
+            
+        }
+    
+        let cancelAction = UIAlertAction(title: "cancel", style: .default)
+        
+        todoAlert.addAction(addTodoAction)
+        todoAlert.addAction(cancelAction)
+        
+        present(todoAlert, animated: true, completion: nil)
+    }
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -54,7 +76,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.checkImage.image = nil
         }
     }
-
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            todos.remove(at: indexPath.row)
+            listTableView.reloadData()
+        }
+    }
 
 
 }
